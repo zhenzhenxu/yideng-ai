@@ -1,0 +1,22 @@
+{
+    "name": "Yideng AI Code Review Config",
+    "version": "1.0.0",
+    "settings": {
+      "aiAnalysis": {
+        "enabled": true,
+        "language": "zh-CN"
+      },
+      "staticAnalysis": {
+        "enabled": true,
+        "rules": {
+          "typescript": true,
+          "react": true,
+          "security": true
+        }
+      },
+      "fileTypes": {
+        "include": [".tsx", ".ts", ".jsx", ".js", ".css"],
+        "exclude": ["node_modules/**", "build/**"]
+      }
+    }
+  }
