@@ -10,3 +10,14 @@ export const bubbleSort = (arr: number[]): number[] => {
   }
   return arr;
 };
+
+//快速排序
+export const quickSort = (arr: number[]): number[] => {
+  if (arr.length <= 1) return arr;
+  const pivot = arr[Math.floor(arr.length / 2)];
+  const left = arr.filter(item => item < pivot);
+  const right = arr.filter(item => item > pivot);
+  return [...quickSort(left), pivot, ...quickSort(right)];
+};
+
+//二分查找
